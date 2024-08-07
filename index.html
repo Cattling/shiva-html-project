@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - My Website</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #02234b;
+        background-color: #d3e2f3;
+      }
+      header {
+        background-color: #b8dcf7;
+        padding: 10px;
+        text-align: center;
+        color: #02234b;
+      }
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      nav ul li {
+        display: inline;
+        margin: 0 10px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: #175ca5;
+        font-weight: bold;
+      }
+      h1 {
+        color: #02234b;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        color: #022e63;
+        font-size: small;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid #ddd;
+      }
+      th {
+        font-weight: bolder;
+        font-size: medium;
+      }
+      th,
+      td {
+        padding: 8px;
+        text-align: left;
+        font-weight: bold;
+        border-color: #02234b;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 30px;
+      }
+      footer {
+        background-color: #f8f8f8;
+        padding: 10px;
+        text-align: center;
+      }
+      abbr {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      h2,
+      pre {
+        text-align: center;
+        color: #02234b;
+      }
+      .image-container {
+        text-align: center;
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to My Website</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="learnHtml.html">Learn Html</a></li>
+          <li><a href="learnCss.html">Learn CSS</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2>I am learning :</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Subjects</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <abbr title="HyperText Markup Language">HTML</abbr> and
+              <abbr title="Cascading Style Sheets">CSS</abbr>
+            </td>
+            <td>Trying to create nice websites</td>
+          </tr>
+          <tr>
+            <td>Full stack <abbr title="JavaScript">JS</abbr> developer</td>
+            <td>Creating both back-end and front-end using Next.js</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>
+        <pre>
+        click on HTML to go to html page  or  click on CSS to go to CSS page
+        </pre>
+      </h2>
+      <div class="image-container">
+        <img src="images/htmlcss.png" usemap="#learn" alt="learn" />
+      </div>
+      <map name="learn">
+        <area
+          shape="rect"
+          coords="26,27,102,149"
+          href="learnHtml.html"
+          alt="learn html "
+        />
+        <area
+          shape="rect"
+          coords="147,30,235,151"
+          href="learnCss.html"
+          alt="learn css"
+        />
+      </map>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
