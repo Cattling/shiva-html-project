@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAFE - Menu</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        background-image: url("cafeImages/cafe-background-image.png");
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .header-container {
+        width: 90%;
+        height: auto;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 15px;
+        padding-left: 2%;
+        padding-right: 2%;
+        /* padding-top: 1%; */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5px;
+      }
+      .header-menu {
+        padding: 0;
+        font-size: larger;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .header-menu-item {
+        margin: 0 10px;
+        text-decoration: none;
+        color: #3a2009;
+        font-weight: bold;
+      }
+      .main-container {
+        width: 80%;
+        height: auto;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 15px;
+        padding-left: 2%;
+        padding-right: 2%;
+        /* padding-top: 1%; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5px;
+      }
+      .menu-item-container {
+        width: 70%;
+        height: auto;
+        background-color: rgba(246, 127, 62, 0.3);
+        border-radius: 15px;
+        /* padding-left: 2%;
+        padding-right: 2%; */
+        /* padding-top: 1%; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px;
+        margin: 30px;
+        position: relative;
+        z-index: 1;
+      }
+      .menu-item-title {
+        display: flex;
+        flex-direction: column;
+        margin-right: 50px;
+        margin-left: 30px;
+      }
+      .menu-item-title h4 {
+        margin-bottom: 10px;
+        text-align: center;
+      }
+      .menu-item-title img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+      }
+      .menu-item-table {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        margin-right: 10px;
+      }
+      .menu-item-table table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      .menu-item-table td {
+        padding: 10px 30px;
+        text-align: left;
+        font-size: 16px;
+        font-weight: 500;
+        color: #3a2009;
+      }
+      .footer-container {
+        width: 100%;
+        background-color: rgba(58, 32, 9, 0.8);
+        padding: 10px;
+        text-align: center;
+        color: #ffffff;
+        font-size: 14px;
+        border-radius: 0 0 15px 15px;
+      }
+
+      /* .menu-item-container h3 {
+        color: white;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- -------------Header-START------------->
+      <div class="header-container">
+        <ul class="header-menu">
+          <a class="header-menu-item" href="cafe.html">Home</a>
+          <a class="header-menu-item" href="cafeMenu.html">Menu</a>
+          <a class="header-menu-item" href="#">Recipes</a>
+          <a class="header-menu-item" href="cafeAboutUs.html">About Us</a>
+        </ul>
+      </div>
+      <!-- -------------Header-END------------->
+      <div class="main-container">
+        <h2>CAFE MENU</h2>
+        <!-- ------------Menu-item1-START--------- -->
+        <div class="menu-item-container">
+          <div class="menu-item-title">
+            <h4>Espresso-Based Drinks</h4>
+            <img src="cafeImages/espresso.jpg" alt="" />
+          </div>
+          <div class="menu-item-table">
+            <table>
+              <tr>
+                <td>Americano</td>
+                <td>10$</td>
+              </tr>
+              <tr>
+                <td>Cappuccino</td>
+                <td>10$</td>
+              </tr>
+              <tr>
+                <td>Double Espresso</td>
+                <td>10$</td>
+              </tr>
+              <tr>
+                <td>Mocha</td>
+                <td>10$</td>
+              </tr>
+              <tr>
+                <td>Iced Coffee</td>
+                <td>10$</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!---------------Menu-item1-END------------>
+        <!-- ------------Menu-item2-START--------- -->
+        <div class="menu-item-container">
+          <div class="menu-item-title">
+            <h4>Tea and Infusions</h4>
+            <img src="cafeImages/tea.jpg" alt="" />
+          </div>
+          <div class="menu-item-table">
+            <table>
+              <tr>
+                <td>Black Tea</td>
+                <td>10$</td>
+              </tr>
+              <tr>
+                <td>Green Tea</td>
+                <td>10$</td>
+              </tr>
+              <tr>
+                <td>Chai Latte</td>
+                <td>10$</td>
+              </tr>
+              <tr>
+                <td>Matcha Latte</td>
+                <td>10$</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!---------------Menu-item2-END------------>
+        <!-- ------------Menu-item3-START--------- -->
+        <div class="menu-item-container">
+          <div class="menu-item-title">
+            <h4>None Coffee Drinks</h4>
+            <img src="cafeImages/hot-chocolate.jpg" alt="" />
+          </div>
+          <div class="menu-item-table">
+            <table>
+              <tr>
+                <td>Hot Chocolate</td>
+                <td>10$</td>
+              </tr>
+              <tr>
+                <td>Lemonade</td>
+                <td>10$</td>
+              </tr>
+              <tr>
+                <td>Italian Soda</td>
+                <td>10$</td>
+              </tr>
+              <!-- <tr>
+                <td>Mocha</td>
+                <td>10$</td>
+              </tr> -->
+            </table>
+          </div>
+        </div>
+        <!---------------Menu-item3-END------------>
+        <!-- ------------Menu-item4-START--------- -->
+        <div class="menu-item-container">
+          <div class="menu-item-title">
+            <h4>Specialty Drinks</h4>
+            <img src="cafeImages/pumpkin-spice-latte.jpg" alt="" />
+          </div>
+          <div class="menu-item-table">
+            <table>
+              <tr>
+                <td>Pumpkin Spice Latte</td>
+                <td>10$</td>
+              </tr>
+              <tr>
+                <td>Honey Lavender Latte</td>
+                <td>10$</td>
+              </tr>
+              <!-- <tr>
+                <td>Double Espresso</td>
+                <td>10$</td>
+              </tr>
+              <tr>
+                <td>Mocha</td>
+                <td>10$</td>
+              </tr> -->
+            </table>
+          </div>
+        </div>
+        <!---------------Menu-item4-END------------>
+        <div class="footer-container">
+          <p>© 2024 CAFE. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAFE - About Us</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        padding: 0;
+        margin: 0;
+        background-image: url("cafeImages/cafe-background-image.png");
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+
+      .header-container {
+        width: 90%;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 15px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5px;
+      }
+
+      .header-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .header-menu-item {
+        margin: 0 10px;
+        text-decoration: none;
+        color: #3a2009;
+        font-weight: bold;
+      }
+
+      .main-container {
+        width: 100%;
+        max-width: 1200px;
+        padding: 2%;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5px;
+      }
+
+      @media (max-width: 768px) {
+        .header-container,
+        .main-container {
+          width: 90%;
+        }
+
+        .header-menu-item {
+          font-size: 0.9em;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .header-menu {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .main-container {
+          padding: 1rem;
+        }
+      }
+      p{
+        word-wrap: break-word;
+      }
+    </style>
+  <body>
+    <div class="container">
+      <div class="header-container">
+        <ul class="header-menu">
+          <li><a class="header-menu-item" href="cafe.html">Home</a></li>
+          <li><a class="header-menu-item" href="cafeMenu.html">Menu</a></li>
+          <li><a class="header-menu-item" href="#">Recipes</a></li>
+          <li><a class="header-menu-item" href="cafeAboutUs.html">About Us</a></li>
+        </ul>
+      </div>
+
+      <div class="main-container">
+        <h3>About Us:</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem placeat natus quas impedit assumenda dolor unde officiis beatae, veniam recusandae! Accusantium atque molestiae qui! Voluptatum tenetur amet atque culpa aspernatur optio obcaecati ex, illum sint quisquam molestias nam error praesentium nemo iure! Mollitia cupiditate placeat veritatis, quo sapiente earum doloremque fugiat, debitis quos ea blanditiis laudantium aut quis, unde eius.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus illo optio excepturi, iure at assumenda fugiat accusamus ratione aspernatur consequatur animi eum dolores reprehenderit esse nesciunt sunt aperiam impedit eius sit culpa provident deserunt laborum quasi nemo. Assumenda et omnis placeat veritatis adipisci, fugiat, cumque repellat, odio architecto repudiandae ipsa.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nulla quis, fuga voluptatum ut iure delectus cupiditate ratione nobis id.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, temporibus.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde temporibus perferendis tempore asperiores illum dignissimos, sint sequi ex, tempora sunt excepturi. Delectus provident natus quam blanditiis dolorem voluptas quaerat at?</p>
+        <div class="footer-container">
+            <p>© 2024 CAFE. All rights reserved.</p>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
