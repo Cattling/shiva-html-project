@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      body {
+        background-color: #cffaff;
+      }
+      @keyframes animAirplane {
+        0% {
+          left: 100px;
+          top: 100px;
+        }
+        10% {
+          left: 200px;
+          top: 90px;
+        }
+        20% {
+          left: 300px;
+          top: 80px;
+        }
+        30% {
+          left: 400px;
+          top: 70px;
+        }
+        40% {
+          left: 500px;
+          top: 60px;
+        }
+        50% {
+          left: 600px;
+          top: 70px;
+        }
+        60% {
+          left: 700px;
+          top: 80px;
+        }
+        70% {
+          left: 800px;
+          top: 90px;
+        }
+        80% {
+          left: 900px;
+          top: 100px;
+        }
+        90% {
+          left: 1000px;
+          top: 110px;
+        }
+        100% {
+          left: 1100px;
+          top: 120px;
+        }
+      }
+      @keyframes animCar {
+        0% {
+          left: 100px;
+        }
+        10% {
+          left: 150px;
+        }
+        20% {
+          left: 200px;
+        }
+        30% {
+          left: 250px;
+        }
+        40% {
+          left: 300px;
+        }
+        50% {
+          left: 350px;
+        }
+        60% {
+          left: 400px;
+        }
+        70% {
+          left: 450px;
+        }
+        80% {
+          left: 500px;
+        }
+        90% {
+          left: 550px;
+        }
+        100% {
+          left: 600px;
+        }
+      }
+      .airplane {
+        background-image: url("animationImages/airplane.png");
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        left: 100px;
+        top: 100px;
+        width: 50px;
+        height: 50px;
+        animation-name: animAirplane;
+        animation-duration: 20s;
+        animation-delay: 0.5s;
+        animation-direction: normal;
+        animation-iteration-count: 1;
+      }
+      .car {
+        background-image: url("animationImages/car.png");
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        left: 100px;
+        top: 400px;
+        width: 50px;
+        height: 50px;
+        animation-name: animCar;
+        animation-duration: 20s;
+        animation-delay: 0.2s;
+        animation-direction: normal;
+        animation-iteration-count: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="airplane"></div>
+    <div class="car"></div>
+  </body>
+</html>
